@@ -66,7 +66,16 @@ dessert = Menu.new("Dessert Menu", dessert_menu)
 
 puts "Welcome to the Restaurant"
 main.display
-puts "please select your Main choice:"
+puts "please select your Main choice: (1 , 2 or 3)"
+main_select = gets.strip.to_i
+side.display
+puts "would you like a side dish (1, 2 or 3 )?"
+side.display = gets.strip.to_i
+
+
+puts main_menu["Meatloaf"]#[values] 
+#can't figure out how to display order results (food hash contents) in relation to their array position.
+# nor how to add extraneous info onto each menu item (descriptions)
 
 
 
